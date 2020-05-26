@@ -8,11 +8,16 @@ React позволяет делать модульный css.
 Импортим его как обьект s и далее обращаемся как к свойствам (s.main)*/
 
 const MyPosts = () => {
+  let postData = [
+    {id: 0, message: 'Hi, how a u?', likesCount: 2},
+    {id: 1, message: 'It\'s my first post', likesCount: 7},
+    {id: 2, message: 'i, how a u?', likesCount: 34},
+  ]
   return (
-    <div>
-      My posts
+    <div className={s.postsBlock}>
+      <h3>My posts</h3>
       <div>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea cols="20" rows="2"></textarea>
         <button>Add post</button>
       </div>
       <div className={s.posts}>
