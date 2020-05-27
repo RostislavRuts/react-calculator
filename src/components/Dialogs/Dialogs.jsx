@@ -25,7 +25,9 @@ const Dialogs = (props) => {
         {id: 2, name: 'Nata'},
         {id: 3, name: 'Van'},
         {id: 4, name: 'Sveta'},
-    ]
+    ];
+
+    let dialogsElements = dialogsData.map( dialog => <DialogItem name={dialog.name} id={dialog.id}/> );
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
